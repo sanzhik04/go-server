@@ -20,7 +20,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/hello" {
-		http.Error(w, "404 NOT FOUND", http.StatusNotFound)
+		http.Error(w, "404 NOT FOUND!", http.StatusNotFound)
 		return
 	}
 
